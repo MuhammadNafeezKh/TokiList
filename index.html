@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TokiNime – ListExplorer</title>
+
+  <link rel="stylesheet" href="TokiList.css" />
+</head>
+<body>
+
+<header>
+  <h1 id="homeBtn">TokiList</h1>
+
+  <div class="controls">
+    <input
+      id="searchInput"
+      type="search"
+      placeholder="Cari anime..."
+      aria-label="Cari anime"
+    />
+
+    <select id="yearSelect" aria-label="Pilih tahun"></select>
+
+    <select id="seasonSelect" aria-label="Pilih musim">
+      <option value="winter">Winter</option>
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+      <option value="fall">Fall</option>
+    </select>
+
+    <select id="genreSelect" aria-label="Pilih genre">
+      <option value="">All Genres</option>
+    </select>
+  </div>
+</header>
+
+<main class="container">
+  <section id="home-view">
+    <div id="anime-grid" class="anime-grid"></div>
+    <div id="pagination" class="pagination"></div>
+  </section>
+
+  <section id="detail-view">
+    <button class="back-btn" onclick="goHome()">← Kembali</button>
+    <div id="detail-content"></div>
+  </section>
+</main>
+
+<footer>
+  <p>
+    Tokita | 2025 · Data dari
+    <a href="https://jikan.moe/" target="_blank" rel="noopener">
+      Jikan API
+    </a>
+  </p>
+</footer>
+
+<a
+  href="https://nafis-porto.vercel.app/"
+  class="portfolio-fab"
+  target="_blank"
+  rel="noopener"
+  aria-label="Kenalan dengan developer"
+>
+  🌐
+  <span class="fab-tooltip">
+    kenalan yuk dengan developer kecil ini
+  </span>
+</a>
+
+<script src="TokiList.js" defer></script>
+</body>
+</html>
